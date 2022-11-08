@@ -6,58 +6,57 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/6D JEKYLL.gltf");
+  const { nodes, materials } = useGLTF("/be pack caja tomate1.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano001.geometry}
-        material={materials["Material.001"]}
-        position={[-0.08, 0.17, -0.05]}
+        geometry={nodes.Text002.geometry}
+        material={materials["Material.002"]}
+        position={[0.18, 0, -0.07]}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Text001.geometry}
+        material={materials["Material.002"]}
+        position={[-0.01, -0.06, 0.13]}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Text.geometry}
+        material={materials["Material.002"]}
+        position={[0.18, -0.06, 0]}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001.geometry}
+        material={materials["Material.002"]}
+        position={[-0.14, -0.06, 0.09]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube005.geometry}
+        material={materials["Material.002"]}
+        position={[0.15, -0.06, 0.14]}
         rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano002.geometry}
-        material={materials["Material.001"]}
-        position={[0.07, 0.17, -0.05]}
+        geometry={nodes.Cube006.geometry}
+        material={materials["Material.002"]}
+        position={[0.16, -0.04, -0.07]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plano003.geometry}
-        material={materials["Material.001"]}
-        position={[-0.08, 0.17, 0.05]}
-        rotation={[0, Math.PI / 2, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Texto.geometry}
-        material={materials["Material.001"]}
-        position={[0.23, -0.03, 0.02]}
-        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Texto001.geometry}
-        material={materials["Material.001"]}
-        position={[0.01, -0.03, 0.31]}
-        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Texto002.geometry}
-        material={materials["Material.001"]}
-        position={[0.22, 0.01, -0.17]}
-        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-      />
-      <group position={[0, -0.01, 0]}>
+      <group position={[-0.01, 0, 0]} rotation={[Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
           receiveShadow
@@ -81,4 +80,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/6D JEKYLL.gltf");
+useGLTF.preload("/be pack caja tomate1.gltf");
